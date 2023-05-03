@@ -23,7 +23,7 @@ def main(argv):
         exeicon = iconfile
         
     
-    ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
+    ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico {filename}"
     #CTK ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--add-data \"%localappdata%/Programs/Python/Python310/Lib/site-packages/customtkinter;customtkinter/\" --upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
     print(ha)
     os.system(ha)
