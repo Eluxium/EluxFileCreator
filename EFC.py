@@ -16,14 +16,14 @@ def main(argv):
     print ('Input file is ', inputfile)
     print ('Output file is ', iconfile)
     exeicon = "Elux"
-    filename = "Elux"
+    file = "Elux"
     if inputfile != None:
-        filename = inputfile
+        file = inputfile
     if iconfile != None:
         exeicon = iconfile
         
     
-    ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico {filename}"
+    ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico {file}"
     #CTK ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--add-data \"%localappdata%/Programs/Python/Python310/Lib/site-packages/customtkinter;customtkinter/\" --upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
     print(ha)
     os.system(ha)
