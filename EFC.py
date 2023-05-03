@@ -15,7 +15,6 @@ def main(argv):
             iconfile = arg
     print ('Input file is ', inputfile)
     print ('Output file is ', iconfile)
-    hip = "--hidden-import"
     exeicon = "Elux"
     filename = "Elux"
     if inputfile != None:
@@ -23,7 +22,9 @@ def main(argv):
     if iconfile != None:
         exeicon = iconfile
         
+    
     ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
+    #CTK ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--add-data \"%localappdata%/Programs/Python/Python310/Lib/site-packages/customtkinter;customtkinter/\" --upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
     print(ha)
     os.system(ha)
 
