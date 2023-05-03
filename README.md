@@ -9,5 +9,5 @@ This is a simple pyinstaller project
 `python EFC.py -i <inputfile> -ico <iconfilename>`
 ## Documentation(sorta)
 `python EFC.py -i(--ifile) <inputfile> -ico(--icofile) <iconfile>`    
-inputfile is the name of the py file to turn into an exe file.
+inputfile is the name of the py file to turn into an exe file.    
 iconfile is the name of the icon file to add to that exe file.
