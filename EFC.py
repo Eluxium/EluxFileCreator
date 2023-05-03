@@ -23,28 +23,6 @@ def main(argv):
     if iconfile != None:
         exeicon = iconfile
         
-    imps = {
-        "base64",
-        "ctypes",
-        "json",
-        "re",
-        "time",
-        "subprocess",
-        "sys",
-        "sqlite3",
-        "requests_toolbelt",
-        "psutil",
-        "PIL",
-        "PIL.ImageGrab",
-        "Crypto",
-        "Crypto.Cipher.AES",
-        "win32crypt"
-    }
-    lol = ""
-    for l in imps:
-        lol += " "+hip+" "+l
-        print(l)
-    ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--noconsole "+"--upx-dir=./tools "+"--distpath=./ "+lol+" --icon "+exeicon+f" ./{filename}.py"
     ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
     print(ha)
     os.system(ha)
