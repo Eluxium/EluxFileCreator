@@ -16,7 +16,7 @@ def main(argv):
     print ('Input file is ', inputfile)
     print ('Output file is ', iconfile)
     exeicon = "Elux"
-    file = "Elux"
+    file = "./Elux.py"
     if inputfile != None:
         file = inputfile
     if iconfile != None:
@@ -24,7 +24,7 @@ def main(argv):
         
     
     ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico {file}"
-    #CTK ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--add-data \"%localappdata%/Programs/Python/Python310/Lib/site-packages/customtkinter;customtkinter/\" --upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico ./{filename}.py"
+    #CTK ha = "python "+"-m "+"PyInstaller "+"--onefile "+"--clean "+"--add-data \"%localappdata%/Programs/Python/Python310/Lib/site-packages/customtkinter;customtkinter/\" --upx-dir=./tools "+"--distpath=./ --icon ./"+exeicon+f".ico {file}"
     print(ha)
     os.system(ha)
 
