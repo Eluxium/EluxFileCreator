@@ -7,7 +7,7 @@ def main(argv):
     opts, args = getopt.getopt(argv,"hi:o:",["ifile=","icofile="])
     for opt, arg in opts:
         if opt == '-h':
-            print ('EFX.py -i <inputfile> -ico <iconfile>')
+            print ('EFC.py -i <inputfile> -ico <iconfile>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg
