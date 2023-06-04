@@ -4,14 +4,14 @@ import sys, getopt
 def main(argv):
     inputfile = None
     iconfile = None
-    opts, args = getopt.getopt(argv,"hi:o:",["ifile=","icofile="])
+    opts, args = getopt.getopt(argv,"hi:o:",["ifile=","icofilename="])
     for opt, arg in opts:
         if opt == '-h':
-            print ('EFC.py -i <inputfile> -ico <iconfile>')
+            print ('EFC.py -i <inputfile> -ico <iconfilename>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg
-        elif opt in ("-ico", "--icofile"):
+        elif opt in ("-ico", "--icofilename"):
             iconfile = arg
     print ('Input file is ', inputfile)
     print ('Output file is ', iconfile)
