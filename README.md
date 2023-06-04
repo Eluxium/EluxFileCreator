@@ -8,6 +8,6 @@ This is a simple pyinstaller project
 4. Run Elux File Creator by typing:     
 `python EFC.py -i <inputfile> -ico <iconfilename>`
 ## Documentation(sorta)
-`python EFC.py -i(--ifile) <inputfile> -ico(--icofile) <iconfile>`    
+`python EFC.py -i(--ifile) <inputfile> -ico(--icofilename) <iconfilename>`    
 inputfile is the path to the py file that you want to turn into an exe file.    
 iconfile is the name of the icon file to add to that exe file.
